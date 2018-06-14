@@ -1,0 +1,40 @@
+{
+  "name": "",
+  "version": "0.0.0",
+  "description": "TODO",
+  "main": ".js",
+  "scripts": {
+    "build": "npm run build:js && npm run build:css",
+    "watch": "miru -p public -w [ npm run watch:js, public/bundle.js ] -w [ npm run watch:css, public/bundle.css ] -t public/index.html",
+    "build:js": "browserify --bare -t [ babelify --presets [ env] ] src/js/index.js -o public/bundle.js",
+    "watch:js": "watchify --debug --verbose --bare -t [ babelify --presets [ env] ] src/js/index.js -o public/bundle.js",
+    "build:css": "stylus -u nib src/css/index.styl -o public/bundle.css",
+    "watch:css": "stylus -w -u nib src/css/index.styl -o public/bundle.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    ""
+  ],
+  "author": "talmobi <talmo.christian@gmail.com>",
+  "license": "UNLICENSED",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/talmobi/"
+  },
+  "bugs": {
+    "url": "https://github.com/talmobi//issues",
+    "email": "talmo.christian@gmail.com"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "~6.26.3",
+    "babel-preset-env": "~1.7.0",
+    "babelify": "~8.0.0",
+    "browserify": "~16.2.2",
+    "miru": "~0.11.0",
+    "nib": "~1.1.2",
+    "stylus": "~0.54.5",
+    "watchify": "~3.11.0"
+  }
+}

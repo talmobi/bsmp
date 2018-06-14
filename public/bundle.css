@@ -1,0 +1,12 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #333;
+  color: #eee;
+}
+#root {
+  text-align: center;
+  background: #008000;
+  background: #00f;
+}
