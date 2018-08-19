@@ -6,8 +6,8 @@
   "scripts": {
     "build": "npm run build:js && npm run build:css",
     "watch": "miru -p public -w [ npm run watch:js, public/bundle.js ] -w [ npm run watch:css, public/bundle.css ] -t public/index.html",
-    "build:js": "browserify --bare -t [ babelify --presets [ env] ] src/js/index.js -o public/bundle.js",
-    "watch:js": "watchify --debug --verbose --bare -t [ babelify --presets [ env] ] src/js/index.js -o public/bundle.js",
+    "build:js": "browserify --bare -t [ babelify --presets [ env ] ] src/js/index.js -o public/bundle.js",
+    "watch:js": "watchify --debug --verbose --bare -t [ babelify --presets [ env ] ] src/js/index.js -o public/bundle.js",
     "build:css": "stylus -u autoprefixer-stylus -u nib src/css/index.styl -o public/bundle.css",
     "watch:css": "stylus -w -u autoprefixer-stylus -u nib src/css/index.styl -o public/bundle.css",
     "test": "echo \"Error: no test specified\" && exit 1"
