@@ -3,5 +3,14 @@ node_modules
 # vim files
 *.sw?
 
+# dist files ( built with npm run build )
+public/bundle.css
+public/bundle.js
+public/bundle.min.css
+public/bundle.min.js
+
+# development script
+public/miru-connect.js
+
 # mac files
 *.DS_Store
