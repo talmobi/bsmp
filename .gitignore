@@ -8,6 +8,9 @@ public/bundle.css
 public/bundle.js
 public/bundle.min.css
 public/bundle.min.js
+public/vendor.js
+public/vendor.min.js
+public/vendor
 
 # development script
 public/miru-connect.js
