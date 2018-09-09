@@ -11,6 +11,7 @@ public/bundle.min.js
 public/vendor.js
 public/vendor.min.js
 public/vendor
+public/index.html
 
 # development script
 public/miru-connect.js
