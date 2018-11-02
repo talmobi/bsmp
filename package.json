@@ -17,8 +17,8 @@
     "uglify": "npm run uglify:js && npm run uglify:css",
     "uglify:js": "uglifyjs public/bundle.js -cmo public/bundle.min.js",
     "uglify:css": "uglifycss public/bundle.css --output public/bundle.min.css",
-    "vendor": "npm run vendor:src && uglifyjs public/vendor.js -cmo public/vendor.min.js",
-    "vendor:min": "concat vendor/min/* -o public/vendor.js && npm run vendor:min",
+    "vendor": "npm run vendor:src && npm run vendor:min",
+    "vendor:min": "concat vendor/min/* -o public/vendor.js && uglifyjs public/vendor.js -cmo public/vendor.min.js",
     "vendor:src": "mkdir public/vendor || cp vendor/src/* public/vendor/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
