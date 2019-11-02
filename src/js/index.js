@@ -1,3 +1,5 @@
+'use strict'
+
 var el = document.getElementById( 'root' )
 
 var colors = [ 'pink', 'salmon', 'orange', 'tomato', 'yellow' ]
