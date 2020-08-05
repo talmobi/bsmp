@@ -38,17 +38,17 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "autoprefixer-stylus": "~0.14.0",
-    "@babel/core": "~7.7.5",
-    "@babel/preset-env": "~7.7.6",
-    "babelify": "~8.0.0",
-    "browserify": "~16.2.2",
+    "@babel/core": "~7.11.1",
+    "@babel/preset-env": "~7.11.0",
+    "@talmobi/watchify": "~3.11.1",
+    "autoprefixer-stylus": "~1.0.0",
+    "babelify": "~10.0.0",
+    "browserify": "~16.5.2",
     "concat": "~1.0.3",
-    "miru": "~0.13.0",
+    "miru": "~0.14.3",
     "nib": "~1.1.2",
-    "stylus": "~0.54.5",
-    "uglify-js": "~3.4.7",
-    "uglifycss": "0.0.29",
-    "watchify": "~3.11.0"
+    "stylus": "~0.54.8",
+    "uglify-js": "~3.10.1",
+    "uglifycss": "0.0.29"
   }
 }
