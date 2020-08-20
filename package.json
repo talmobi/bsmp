@@ -20,7 +20,10 @@
     "vendor": "npm run vendor:src && npm run vendor:min",
     "vendor:min": "concat vendor/min/* -o public/vendor.js && uglifyjs public/vendor.js -cmo public/vendor.min.js",
     "vendor:src": "mkdir public/vendor || cp vendor/src/* public/vendor/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+
+    "watch:mirusrc": "~/code/miru/cli.js -p public -w [ npm run watch:js -o public/bundle.js -r bytes.written ] -w [ npm run watch:css -o public/bundle.css ] -t public/index.html -f templates/index-dev.html -e 'npm run html:src'",
+    "watch:js:watchifysrc": "/Users/mollie/code/watchify/bin/cmd.js --bare --debug --verbose -t [ babelify --presets [ @babel/preset-env ] ] src/js/index.js -o public/bundle.js"
   },
   "keywords": [
     ""
