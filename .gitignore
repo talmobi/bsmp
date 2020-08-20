@@ -1,7 +1,10 @@
 node_modules
 
-# vim files
-*.sw?
+# vim temp files
+*.swp
+*.swo
+*.swn
+*.swm
 
 # dist files ( built with npm run build )
 public/bundle.css
