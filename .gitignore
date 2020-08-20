@@ -19,5 +19,8 @@ public/index.html
 # development script
 public/miru-connect.js
 
+# temp build builds
+public/bundle*tmp*
+
 # mac files
 *.DS_Store
