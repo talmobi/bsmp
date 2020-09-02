@@ -5,6 +5,7 @@
   "main": ".js",
   "scripts": {
     "prepare": "mkdirp templates/ public/ src/ public/vendor/",
+    "postinstall": "npm run vendor:install",
     "build": "npm run vendor:build && npm run build:src && npm run uglify && npm run html",
     "build:src": "npm run build:js && npm run build:css",
     "html": "cpy templates/index-production.html public/index.html --rename",
