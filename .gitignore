@@ -7,20 +7,16 @@ node_modules
 *.swm
 
 # dist files ( built with npm run build )
-public/bundle.css
-public/bundle.js
-public/bundle.min.css
-public/bundle.min.js
-public/vendor.js
-public/vendor.min.js
-public/vendor
-public/index.html
+public/
 
-# development script
-public/miru-connect.js
+# vendor bundles ( built with npm run build:vendor )
+websack/bundles/
 
-# temp build builds
-public/bundle*tmp*
+# development script for live reloading
+miru-connect.js
+
+# rely on properly configured set package.json
+package-lock.json
 
 # mac files
 *.DS_Store
